@@ -73,7 +73,7 @@ export default function ProjectSwitcher({
               </div>
             </div>
             <ChevronsUpDown
-              className="text-muted-foreground size-4"
+              className="size-4 text-muted-foreground"
               aria-hidden="true"
             />
           </Button>
@@ -106,7 +106,7 @@ function ProjectList({
           key={slug}
           className={cn(
             buttonVariants({ variant: "ghost" }),
-            "text-muted-foreground hover:text-foreground relative flex h-9 items-center gap-3 p-3",
+            "relative flex h-9 items-center gap-3 p-3 text-muted-foreground hover:text-foreground",
           )}
           href="#"
           onClick={() => setOpenPopover(false)}
@@ -115,14 +115,14 @@ function ProjectList({
           <span
             className={`flex-1 truncate text-sm ${
               selected.slug === slug
-                ? "text-foreground font-medium"
+                ? "font-medium text-foreground"
                 : "font-normal"
             }`}
           >
             {slug}
           </span>
           {selected.slug === slug && (
-            <span className="text-foreground absolute inset-y-0 right-0 flex items-center pr-3">
+            <span className="absolute inset-y-0 right-0 flex items-center pr-3 text-foreground">
               <Check size={18} aria-hidden="true" />
             </span>
           )}
@@ -145,7 +145,7 @@ function ProjectList({
 function ProjectSwitcherPlaceholder() {
   return (
     <div className="flex animate-pulse items-center space-x-1.5 rounded-lg px-1.5 py-2 sm:w-60">
-      <div className="bg-muted h-8 w-36 animate-pulse rounded-md xl:w-[180px]" />
+      <div className="h-8 w-36 animate-pulse rounded-md bg-muted xl:w-[180px]" />
     </div>
   );
 }

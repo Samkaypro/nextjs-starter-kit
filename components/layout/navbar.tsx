@@ -29,7 +29,7 @@ const links = marketingConfig.mainNav;
 
   return (
     <header
-      className={`bg-background/60 sticky top-0 z-40 flex w-full justify-center backdrop-blur-xl transition-all ${
+      className={`sticky top-0 z-40 flex w-full justify-center bg-background/60 backdrop-blur-xl transition-all ${
         scroll ? (scrolled ? "border-b" : "bg-transparent") : "border-b"
       }`}
     >
@@ -52,7 +52,7 @@ const links = marketingConfig.mainNav;
                   href={item.disabled ? "#" : item.href}
                   prefetch={true}
                   className={cn(
-                    "hover:text-foreground/80 flex items-center text-lg font-medium transition-colors sm:text-sm",
+                    "flex items-center text-lg font-medium transition-colors hover:text-foreground/80 sm:text-sm",
                     item.href.startsWith(`/${selectedLayout}`)
                       ? "text-foreground"
                       : "text-foreground/60",

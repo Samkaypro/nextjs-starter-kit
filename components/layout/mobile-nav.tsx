@@ -31,24 +31,24 @@ const links = marketingConfig.mainNav;
       <button
         onClick={() => setOpen(!open)}
         className={cn(
-          "hover:bg-muted active:bg-muted fixed right-2 top-2.5 z-50 rounded-full p-2 transition-colors duration-200 focus:outline-none md:hidden",
+          "fixed right-2 top-2.5 z-50 rounded-full p-2 transition-colors duration-200 hover:bg-muted focus:outline-none active:bg-muted md:hidden",
           open && "hover:bg-muted active:bg-muted",
         )}
       >
         {open ? (
-          <X className="text-muted-foreground size-5" />
+          <X className="size-5 text-muted-foreground" />
         ) : (
-          <Menu className="text-muted-foreground size-5" />
+          <Menu className="size-5 text-muted-foreground" />
         )}
       </button>
 
       <nav
         className={cn(
-          "bg-background fixed inset-0 z-20 hidden w-full overflow-auto px-5 py-16 lg:hidden",
+          "fixed inset-0 z-20 hidden w-full overflow-auto bg-background px-5 py-16 lg:hidden",
           open && "block",
         )}
       >
-        <ul className="divide-muted grid divide-y">
+        <ul className="grid divide-y divide-muted">
           {links && links.length > 0 && links.map(({ title, href }) => (
             <li key={href} className="py-3">
               <Link

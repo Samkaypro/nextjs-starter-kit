@@ -29,7 +29,7 @@ export function UserAccountNav() {
 
   if (!user)
     return (
-      <div className="bg-muted size-8 animate-pulse rounded-full border" />
+      <div className="size-8 animate-pulse rounded-full border bg-muted" />
     );
 
   if (isMobile) {
@@ -43,28 +43,28 @@ export function UserAccountNav() {
         </Drawer.Trigger>
         <Drawer.Portal>
           <Drawer.Overlay
-            className="bg-background/80 fixed inset-0 z-40 h-full backdrop-blur-sm"
+            className="fixed inset-0 z-40 h-full bg-background/80 backdrop-blur-sm"
             onClick={closeDrawer}
           />
-          <Drawer.Content className="bg-background fixed inset-x-0 bottom-0 z-50 mt-24 overflow-hidden rounded-t-[10px] border px-3 text-sm">
+          <Drawer.Content className="fixed inset-x-0 bottom-0 z-50 mt-24 overflow-hidden rounded-t-[10px] border bg-background px-3 text-sm">
             <div className="sticky top-0 z-20 flex w-full items-center justify-center bg-inherit">
-              <div className="bg-muted-foreground/20 my-3 h-1.5 w-16 rounded-full" />
+              <div className="my-3 h-1.5 w-16 rounded-full bg-muted-foreground/20" />
             </div>
 
             <div className="flex items-center justify-start gap-2 p-2">
               <div className="flex flex-col">
                 {user.name && <p className="font-medium">{user.name}</p>}
                 {user.email && (
-                  <p className="text-muted-foreground w-[200px] truncate">
+                  <p className="w-[200px] truncate text-muted-foreground">
                     {user?.email}
                   </p>
                 )}
               </div>
             </div>
 
-            <ul role="list" className="text-muted-foreground mb-14 mt-1 w-full">
+            <ul role="list" className="mb-14 mt-1 w-full text-muted-foreground">
               {user.role === "ADMIN" ? (
-                <li className="text-foreground hover:bg-muted rounded-lg">
+                <li className="rounded-lg text-foreground hover:bg-muted">
                   <Link
                     href="/admin"
                     onClick={closeDrawer}
@@ -76,7 +76,7 @@ export function UserAccountNav() {
                 </li>
               ) : null}
 
-              <li className="text-foreground hover:bg-muted rounded-lg">
+              <li className="rounded-lg text-foreground hover:bg-muted">
                 <Link
                   href="/dashboard"
                   onClick={closeDrawer}
@@ -87,7 +87,7 @@ export function UserAccountNav() {
                 </Link>
               </li>
 
-              <li className="text-foreground hover:bg-muted rounded-lg">
+              <li className="rounded-lg text-foreground hover:bg-muted">
                 <Link
                   href="/dashboard/settings"
                   onClick={closeDrawer}
@@ -99,7 +99,7 @@ export function UserAccountNav() {
               </li>
 
               <li
-                className="text-foreground hover:bg-muted rounded-lg"
+                className="rounded-lg text-foreground hover:bg-muted"
                 onClick={(event) => {
                   event.preventDefault();
                   signOut({
@@ -133,7 +133,7 @@ export function UserAccountNav() {
           <div className="flex flex-col space-y-1 leading-none">
             {user.name && <p className="font-medium">{user.name}</p>}
             {user.email && (
-              <p className="text-muted-foreground w-[200px] truncate text-sm">
+              <p className="w-[200px] truncate text-sm text-muted-foreground">
                 {user?.email}
               </p>
             )}

@@ -8,7 +8,7 @@ export default function PreviewLanding() {
   return (
     <div className="pb-6 sm:pb-20">
       <MaxWidthWrapper>
-        <div className="md:bg-muted/30 md:ring-border h-auto rounded-xl md:p-3.5 md:ring-1 md:ring-inset">
+        <div className="h-auto rounded-xl md:bg-muted/30 md:p-3.5 md:ring-1 md:ring-inset md:ring-border">
           <div className="relative overflow-hidden rounded-xl border md:rounded-lg">
             <BlurImage
               src={lightPreview}
