@@ -1,22 +1,17 @@
-<a href="https://next-auth-roles-template.vercel.app">
-  <img alt="Next Template" src="public/_static/og.jpg">
-  <h1 align="center">Next Auth Roles Template</h1>
+<a href="https://kaypro-nextjs-x.vercel.app">
+  
+  <h1 align="center">Next Js starter kit with auth</h1>
 </a>
 
 <p align="center">
   Start at full speed with this Next.js Template !
 </p>
 
-<p align="center">
-  <a href="https://twitter.com/miickasmt">
-    <img src="https://img.shields.io/twitter/follow/miickasmt?style=flat&label=miickasmt&logo=twitter&color=0bf&logoColor=fff" alt="Mickasmt Twitter follower count" />
-  </a>
-</p>
+
 
 <p align="center">
   <a href="#installation"><strong>Installation</strong></a> ·
   <a href="#tech-stack--features"><strong>Tech Stack + Features</strong></a> ·
-  <a href="#author"><strong>Author</strong></a>
 </p>
 <br/>
 
@@ -25,12 +20,12 @@
 Clone & create this repo locally with the following command:
 
 ```bash
-npx create-next-app my-saas-project --example "https://github.com/mickasmt/next-auth-roles-template"
+npx create-next-app my-saas-project --example "https://github.com/Samkaypro/nextjs-starter-kit.git"
 ```
 
 Or, deploy with Vercel:
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fmickasmt%2Fnext-auth-roles-template)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fsamkaypro%2Fnextjs-starter-kit)
 
 ### Steps
 
@@ -52,37 +47,6 @@ cp .env.example .env.local
 pnpm run dev
 ```
 
-4. Remove parts you don't want
-
-You can use the command `pnpm run remove-content` in your terminal to remove specific parts of your project. This command supports the following parameters:
-
-- **--blog**: Removes the blog section from your project.
-- **--docs**: Removes the documentation section from your project.
-
-#### Recommendations
-
-- **Remove Both Sections**: It is recommended to use `pnpm run remove-content` without specifying parameters (`--blog` or `--docs`). This ensures that all associated documents are properly removed, as some documents may not be deleted/updated if you remove "blog" after "docs" or vice versa.
-
-#### Examples
-
-1. To remove both the blog and documentation sections:
-
-```bash
-pnpm run remove-content
-```
-
-2. To remove only the blog section:
-
-```bash
-pnpm run remove-content --blog
-```
-
-3. To remove only the documentation section:
-
-```bash
-pnpm run remove-content --docs
-```
-
 > [!NOTE]  
 > I use [npm-check-updates](https://www.npmjs.com/package/npm-check-updates) package for update this project.
 >
@@ -90,7 +54,6 @@ pnpm run remove-content --docs
 
 ## Tech Stack + Features
 
-<img alt="Next Auth Roles Template" src="public/_static/images/x-preview.jpg">
 
 ### Frameworks
 
@@ -132,13 +95,3 @@ pnpm run remove-content --docs
 ### Miscellaneous
 
 - [Vercel Analytics](https://vercel.com/analytics) – Track unique visitors, pageviews, and more in a privacy-friendly way
-
-## Author
-
-This project is based on [Next SaaS Stripe Starter](https://next-saas-stripe-starter.vercel.app/).
-
-Created by [@miickasmt](https://twitter.com/miickasmt) in 2023, released under the [MIT license](https://github.com/shadcn/taxonomy/blob/main/LICENSE.md).
-
-## Credits
-
-Thanks to [Hosna Qasmei](https://twitter.com/hqasmei) for part of the dashboard sidebar code.

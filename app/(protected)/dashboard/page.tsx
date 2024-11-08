@@ -8,6 +8,7 @@ export const metadata = constructMetadata({
   title: "Dashboard – Page",
   description: "A description for the dashboard",
 });
+export const runtime = 'edge';
 
 export default async function DashboardPage() {
   const user = await getCurrentUser();

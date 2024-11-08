@@ -10,6 +10,7 @@ export const metadata = constructMetadata({
   title: "Admin – Page",
   description: "Admin page for only admin management.",
 });
+export const runtime = 'edge';
 
 export default async function AdminPage() {
   const user = await getCurrentUser();

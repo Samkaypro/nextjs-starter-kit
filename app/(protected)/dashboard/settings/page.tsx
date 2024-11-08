@@ -11,7 +11,7 @@ export const metadata = constructMetadata({
   title: "Settings – Page",
   description: "Configure your account and website settings.",
 });
-
+export const runtime = 'edge';
 export default async function SettingsPage() {
   const user = await getCurrentUser();
 
