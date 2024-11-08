@@ -19,7 +19,6 @@
   },
   "dependencies": {
     "@auth/prisma-adapter": "^2.4.1",
-    "@cloudflare/next-on-pages": "^1.13.5",
     "@hookform/resolvers": "^3.9.0",
     "@prisma/client": "^5.17.0",
     "@radix-ui/react-accessible-icon": "^1.1.0",
