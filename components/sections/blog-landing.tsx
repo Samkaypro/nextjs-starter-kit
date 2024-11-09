@@ -1,20 +1,20 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button"
 
-export default async function HeroLanding() {
+export default async function BlogLanding() {
   return (
     <section className="space-y-6 py-12 sm:py-20 lg:py-24">
       <div className="container flex max-w-screen-xl flex-col items-start gap-5 ">
         <div className="flex max-w-[980px] flex-col items-start gap-4">
           <h1 className="text-4xl font-bold leading-tight tracking-tighter md:text-6xl lg:leading-[1.1]" style={{ color: '#4052A3' }}>
-            Stock Up Smarter: Let{' '}
+         
             <span className="inline-block rounded-lg bg-[#EEF0FF] px-4 py-1">
-              Vendcliq
-            </span>{' '} <br></br>
-            Boost Your Inventory
+            Vendcliq
+            </span>{' '} Insights: Smart shop <br></br>
+            Tips
           </h1>
           <p className="max-w-[700px] text-lg text-muted-foreground sm:text-xl">
-            Our clever system helps you track your goods and never run out of stock. Many shop owners, from small kiosks to big supermarkets, trust Vera to keep their business running smoothly. Start today and see your profits grow.
+            Discover expert tips, market trends, and AI-powered strategies to optimize your inventory, boost your profits, and stay ahead in the competitive landscape.  
           </p>
         </div>
         <div className="flex flex-col gap-4 min-[400px]:flex-row">

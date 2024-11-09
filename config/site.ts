@@ -4,16 +4,16 @@ import { env } from "@/env.mjs";
 const site_url = env.NEXT_PUBLIC_APP_URL;
 
 export const siteConfig: SiteConfig = {
-  name: "Your site mane",
+  name: "VendCliq",
   description:
-    "Add you site description",
+    "Vendcliq is committed to revolutionizing the distribution industry in Nigeria.",
   url: site_url,
   ogImage: `${site_url}/_static/og.jpg`,
   links: {
     twitter: "https://twitter.com/",
     github: "https://github.com/",
   },
-  mailSupport: "support@yourdomain.com",
+  mailSupport: "support@vendcliq.com",
 };
 
 export const footerLinks: SidebarNavItem[] = [
@@ -21,15 +21,11 @@ export const footerLinks: SidebarNavItem[] = [
     title: "Company",
     items: [
       {
-        title: "About", href: "#",
+        title: "About us", href: "/about",
         icon: ""
       },
       {
-        title: "Enterprise", href: "#",
-        icon: ""
-      },
-      {
-        title: "Terms", href: "/terms",
+        title: "Terms of use", href: "/terms",
         icon: ""
       },
       {
@@ -39,43 +35,35 @@ export const footerLinks: SidebarNavItem[] = [
     ],
   },
   {
-    title: "Product",
+    title: "Get in Touch",
     items: [
       {
-        title: "Security", href: "#",
+        title: "Contact Us", href: "/contact",
         icon: ""
       },
       {
-        title: "Customization", href: "#",
-        icon: ""
-      },
-      {
-        title: "Customers", href: "#",
-        icon: ""
-      },
-      {
-        title: "Changelog", href: "#",
+        title: "Partnership", href: "#",
         icon: ""
       },
     ],
   },
   {
-    title: "Docs",
+    title: "Resource",
     items: [
       {
-        title: "Introduction", href: "#",
+        title: "Blog", href: "/blog",
         icon: ""
       },
       {
-        title: "Installation", href: "#",
+        title: "FAQs", href: "#",
         icon: ""
       },
       {
-        title: "Components", href: "#",
+        title: "Help Center", href: "#",
         icon: ""
       },
       {
-        title: "Code Blocks", href: "#",
+        title: "Testimonials", href: "#",
         icon: ""
       },
     ],
